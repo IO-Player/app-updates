@@ -1,7 +1,7 @@
 {
-    "versionCode": 73,
-    "versionName": "1.0.73",
+    "versionCode": 999,
+    "versionName": "1.0.73-test",
     "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v73/io-player-tv.apk",
-    "updateNotes": "Fixed the real cause of the update never installing: the download-complete broadcast receiver was registered as non-exported, which silently blocked it from ever receiving the system's completion signal (confirmed via logcat: the download finished successfully every time, the app just never found out). Should now correctly prompt to install once downloaded and the install-unknown-apps permission is granted.",
+    "updateNotes": "Temporary test manifest to verify the install flow end-to-end.",
     "isForceUpdate": false
 }
