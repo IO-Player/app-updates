@@ -1,7 +1,7 @@
 {
-    "versionCode":  75,
-    "versionName":  "1.0.75",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v75/io-player-tv.apk",
-    "updateNotes":  "Redesigned TV remote navigation: press-and-hold Center opens a new pill nav bar (TV/Movies/Series/Settings), TV boots straight into fullscreen playback, and the sidebar guide\u0027s Groups mode is back. Removed Sports Hub.",
+    "versionCode":  76,
+    "versionName":  "1.0.76",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v76/io-player-tv.apk",
+    "updateNotes":  "TV now fully closes when backgrounded or backed out of, instead of lingering. Removed the redundant TV Guide tile from mobile\u0027s Home screen. Fixed the nav bar\u0027s Center long-press occasionally jumping straight to the guide.",
     "isForceUpdate":  false
 }
