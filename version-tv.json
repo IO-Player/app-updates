@@ -1,7 +1,7 @@
 {
-    "versionCode": 999,
-    "versionName": "1.0.74-test",
+    "versionCode": 74,
+    "versionName": "1.0.74",
     "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v74/io-player-tv.apk",
-    "updateNotes": "Temporary test manifest to verify the toast feedback.",
+    "updateNotes": "Added a confirmation toast when Update Now is tapped, so the download starting is actually visible in-app instead of only showing up as a system notification.",
     "isForceUpdate": false
 }
