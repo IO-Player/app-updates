@@ -1,7 +1,7 @@
 {
-    "versionCode":  74,
-    "versionName":  "1.0.74",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v74/io-player-tv.apk",
-    "updateNotes":  "Added a confirmation toast when Update Now is tapped, so the download starting is actually visible in-app instead of only showing up as a system notification. If you tapped Update on a previous version and saw no reaction at all, that download was very likely happening silently in the background the whole time -- this just makes it obvious now.",
-    "isForceUpdate":  false
+    "versionCode": 999,
+    "versionName": "1.0.74-test",
+    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v74/io-player-tv.apk",
+    "updateNotes": "Temporary test manifest to verify the toast feedback.",
+    "isForceUpdate": false
 }
