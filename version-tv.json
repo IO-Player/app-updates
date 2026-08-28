@@ -1,7 +1,7 @@
 {
-    "versionCode": 70,
-    "versionName": "1.0.70",
-    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v70/io-player-tv.apk",
-    "updateNotes": "Fixed the in-app update not actually installing after downloading (missing install-unknown-apps permission check) - this release should now install correctly once you grant that permission when prompted.",
-    "isForceUpdate": false
+    "versionCode":  72,
+    "versionName":  "1.0.72",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v72/io-player-tv.apk",
+    "updateNotes":  "Diagnostic build for tracing the update-install issue.",
+    "isForceUpdate":  false
 }
