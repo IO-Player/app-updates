@@ -1,7 +1,7 @@
 {
-    "versionCode":  74,
-    "versionName":  "1.0.74",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v74/io-player-mobile.apk",
-    "updateNotes":  "Added a confirmation toast when Update Now is tapped, so the download starting is actually visible in-app instead of only showing up as a system notification. If you tapped Update on a previous version and saw no reaction at all, that download was very likely happening silently in the background the whole time -- this just makes it obvious now.",
+    "versionCode":  75,
+    "versionName":  "1.0.75",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v75/io-player-mobile.apk",
+    "updateNotes":  "Redesigned TV remote navigation: press-and-hold Center opens a new pill nav bar (TV/Movies/Series/Settings), TV boots straight into fullscreen playback, and the sidebar guide\u0027s Groups mode is back. Removed Sports Hub.",
     "isForceUpdate":  false
 }
