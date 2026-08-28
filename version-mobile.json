@@ -1,7 +1,7 @@
 {
-    "versionCode":  73,
-    "versionName":  "1.0.73",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v73/io-player-mobile.apk",
-    "updateNotes":  "Fixed the real cause of the update never installing: the download-complete broadcast receiver was registered as non-exported, which silently blocked it from ever receiving the system\u0027s completion signal (confirmed via logcat: the download finished successfully every time, the app just never found out). Should now correctly prompt to install once downloaded and the install-unknown-apps permission is granted.",
+    "versionCode":  74,
+    "versionName":  "1.0.74",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v74/io-player-mobile.apk",
+    "updateNotes":  "Added a confirmation toast when Update Now is tapped, so the download starting is actually visible in-app instead of only showing up as a system notification. If you tapped Update on a previous version and saw no reaction at all, that download was very likely happening silently in the background the whole time -- this just makes it obvious now.",
     "isForceUpdate":  false
 }
