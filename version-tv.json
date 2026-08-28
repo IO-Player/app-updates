@@ -1,7 +1,7 @@
-﻿{
-    "versionCode":  68,
-    "versionName":  "1.0.68",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v68/io-player-tv.apk",
-    "updateNotes":  "- Redesigned the Home screen: bigger tile cards with icons and subtitles, matte black background, Settings moved to a corner icon.\n- Redesigned the login screen: pill-shaped inputs with a password show/hide toggle, new headline and layout.\n- Removed the unfinished Sports Guide feature (Sports Hub is unaffected).\n- Fixed the TV guide showing the wrong program info after switching channels.\n- Fixed a bug where changing the font in Settings didn\u0027t do anything.\n- Fixed a Back-button bug in Live TV playback requiring 3 presses to exit.\n- Various TV guide layout and sizing improvements.",
-    "isForceUpdate":  false
+{
+    "versionCode": 68,
+    "versionName": "1.0.68",
+    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v68/io-player-tv.apk",
+    "updateNotes": "- Redesigned the Home screen: bigger tile cards with icons and subtitles, matte black background, Settings moved to a corner icon.\n- Redesigned the login screen: pill-shaped inputs with a password show/hide toggle, new headline and layout.\n- Removed the unfinished Sports Guide feature (Sports Hub is unaffected).\n- Fixed the TV guide showing the wrong program info after switching channels.\n- Fixed a bug where changing the font in Settings didn't do anything.\n- Fixed a Back-button bug in Live TV playback requiring 3 presses to exit.\n- Various TV guide layout and sizing improvements.",
+    "isForceUpdate": false
 }
