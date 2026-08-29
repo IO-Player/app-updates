@@ -1,7 +1,7 @@
 {
-    "versionCode":  83,
-    "versionName":  "1.0.83",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v83/io-player-tv.apk",
-    "updateNotes":  "TV now boots to Home with a centered Quick Menu instead of straight into playback (Settings cog and D-pad focus highlight fixed too). Fixed a bug where a failed/interrupted update download could produce a corrupt file and fail to install with Problem parsing the package.",
+    "versionCode":  87,
+    "versionName":  "1.0.87-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v87/io-player-tv.apk",
+    "updateNotes":  "Added a manual Check for Update option in Settings, a search icon for Movies/Series that searches across all categories, and mobile/TV now show distinct version numbers. Release builds are now properly signed.",
     "isForceUpdate":  false
 }
