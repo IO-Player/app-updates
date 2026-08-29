@@ -1,7 +1,7 @@
 {
-    "versionCode":  89,
-    "versionName":  "1.0.89-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v89/io-player-mobile.apk",
-    "updateNotes":  "TV remote: D-pad Left now zaps to the previous channel instead of opening the guide. First-time logins now land directly on a real playing channel instead of the guide or an account info row.",
+    "versionCode":  92,
+    "versionName":  "1.0.92-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v92/io-player-mobile.apk",
+    "updateNotes":  "Fixed update downloads sometimes failing to install with \u0027Problem parsing the package\u0027 on devices with unreliable wifi (e.g. Fire TV Stick). Replaced the mobile channel-group selector with a scrollable dropdown, and it now correctly shows the current channel\u0027s group right away.",
     "isForceUpdate":  false
 }
