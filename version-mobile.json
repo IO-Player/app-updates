@@ -1,7 +1,7 @@
 {
-    "versionCode":  76,
-    "versionName":  "1.0.76",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v76/io-player-mobile.apk",
-    "updateNotes":  "TV now fully closes when backgrounded or backed out of, instead of lingering. Removed the redundant TV Guide tile from mobile\u0027s Home screen. Fixed the nav bar\u0027s Center long-press occasionally jumping straight to the guide.",
+    "versionCode":  81,
+    "versionName":  "1.0.81",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v81/io-player-mobile.apk",
+    "updateNotes":  "Redesigned mobile Home with a compact Quick Menu (TV/Movies/Series/Settings), fixed Movies/Series grid sizing on phones, added detailed descriptions to movie/series detail screens, and fixed series descriptions sometimes showing as missing.",
     "isForceUpdate":  false
 }
