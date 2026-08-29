@@ -1,7 +1,7 @@
 {
-    "versionCode":  87,
-    "versionName":  "1.0.87-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v87/io-player-mobile.apk",
-    "updateNotes":  "Added a manual Check for Update option in Settings, a search icon for Movies/Series that searches across all categories, and mobile/TV now show distinct version numbers. Release builds are now properly signed.",
+    "versionCode":  89,
+    "versionName":  "1.0.89-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v89/io-player-mobile.apk",
+    "updateNotes":  "TV remote: D-pad Left now zaps to the previous channel instead of opening the guide. First-time logins now land directly on a real playing channel instead of the guide or an account info row.",
     "isForceUpdate":  false
 }
