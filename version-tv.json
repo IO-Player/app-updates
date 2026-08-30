@@ -1,7 +1,7 @@
 {
-    "versionCode":  102,
-    "versionName":  "1.0.102-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v102/io-player-tv.apk",
-    "updateNotes":  "Added a visible play/pause button on TV, relabeled Skip Intro to Skip 85s, and added recommendations when a series finishes its last episode.",
+    "versionCode":  103,
+    "versionName":  "1.0.103-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v103/io-player-tv.apk",
+    "updateNotes":  "Restored the Server URL field on the login screen, starting blank on every fresh install.",
     "isForceUpdate":  false
 }
