@@ -1,7 +1,7 @@
 {
-    "versionCode":  100,
-    "versionName":  "1.0.100-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v100/io-player-mobile.apk",
-    "updateNotes":  "Fixed duplicate/double entries in the EPG guide.",
+    "versionCode":  101,
+    "versionName":  "1.0.101-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v101/io-player-mobile.apk",
+    "updateNotes":  "Movies and Series now use a dropdown for category selection, matching Live TV.",
     "isForceUpdate":  false
 }
