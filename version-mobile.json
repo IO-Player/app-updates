@@ -1,7 +1,7 @@
 {
-    "versionCode":  107,
-    "versionName":  "1.0.107-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v107/io-player-mobile.apk",
-    "updateNotes":  "Critical fix: resolves the persistent crash-on-launch that survived v105 (Room database schema error). If you\u0027re still hitting it, please update again — this makes the database self-heal instead of crashing.",
+    "versionCode":  108,
+    "versionName":  "1.0.108-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v108/io-player-mobile.apk",
+    "updateNotes":  "Fixed the live video stream not actually reconnecting after a network change (VPN toggle, WiFi/mobile switch) - verified live this time.",
     "isForceUpdate":  false
 }
