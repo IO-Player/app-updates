@@ -1,7 +1,7 @@
 {
-    "versionCode":  101,
-    "versionName":  "1.0.101-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v101/io-player-mobile.apk",
-    "updateNotes":  "Movies and Series now use a dropdown for category selection, matching Live TV.",
+    "versionCode":  102,
+    "versionName":  "1.0.102-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v102/io-player-mobile.apk",
+    "updateNotes":  "Added a visible play/pause button on TV, relabeled Skip Intro to Skip 85s, and added recommendations when a series finishes its last episode.",
     "isForceUpdate":  false
 }
