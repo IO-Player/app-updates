@@ -1,7 +1,7 @@
 {
-    "versionCode":  108,
-    "versionName":  "1.0.108-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v108/io-player-mobile.apk",
-    "updateNotes":  "Fixed the live video stream not actually reconnecting after a network change (VPN toggle, WiFi/mobile switch) - verified live this time.",
+    "versionCode":  110,
+    "versionName":  "1.0.110-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v110/io-player-mobile.apk",
+    "updateNotes":  "Fixed the player reconnecting constantly on many channels, with or without VPN - it was reacting to routine connection updates instead of genuine network changes.",
     "isForceUpdate":  false
 }
