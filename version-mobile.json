@@ -1,7 +1,7 @@
 {
-    "versionCode":  105,
-    "versionName":  "1.0.105-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v105/io-player-mobile.apk",
-    "updateNotes":  "Critical fix: v104 was crashing on launch for anyone with an existing saved login. Please update immediately.",
+    "versionCode":  106,
+    "versionName":  "1.0.106-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v106/io-player-mobile.apk",
+    "updateNotes":  "Added a small diagnostic badge in the bottom-right corner of the player showing HTTP/error codes when playback fails, to help diagnose connection issues.",
     "isForceUpdate":  false
 }
