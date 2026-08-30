@@ -1,7 +1,7 @@
 {
-    "versionCode":  104,
-    "versionName":  "1.0.104-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v104/io-player-mobile.apk",
-    "updateNotes":  "Encrypted saved login credentials, added channel favorites (mobile + TV), fixed the app needing a restart to reconnect after a VPN/network change, widened the mobile channel list so names aren\u0027t cut off, fixed several dead Settings buttons (edit provider, buffer size, About version), and removed the colour theme picker.",
+    "versionCode":  105,
+    "versionName":  "1.0.105-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v105/io-player-mobile.apk",
+    "updateNotes":  "Critical fix: v104 was crashing on launch for anyone with an existing saved login. Please update immediately.",
     "isForceUpdate":  false
 }
