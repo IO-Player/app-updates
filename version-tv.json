@@ -1,7 +1,7 @@
 {
-    "versionCode":  99,
-    "versionName":  "1.0.99-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v99/io-player-tv.apk",
-    "updateNotes":  "Added a software audio decoder fallback for boxes whose hardware EAC3/AC3/DTS decoder fails (fixes \u0027Couldn\u0027t play this stream\u0027 on some TV boxes). Added VOD search by actor name. Fixed catch-up freezing/reconnect loop, Clear EPG button, added subtitle delay/sync and next-episode autoplay.",
+    "versionCode":  100,
+    "versionName":  "1.0.100-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v100/io-player-tv.apk",
+    "updateNotes":  "Fixed duplicate/double entries in the EPG guide.",
     "isForceUpdate":  false
 }
