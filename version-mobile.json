@@ -1,7 +1,7 @@
 {
-    "versionCode":  103,
-    "versionName":  "1.0.103-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v103/io-player-mobile.apk",
-    "updateNotes":  "Restored the Server URL field on the login screen, starting blank on every fresh install.",
+    "versionCode":  104,
+    "versionName":  "1.0.104-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v104/io-player-mobile.apk",
+    "updateNotes":  "Encrypted saved login credentials, added channel favorites (mobile + TV), fixed the app needing a restart to reconnect after a VPN/network change, widened the mobile channel list so names aren\u0027t cut off, fixed several dead Settings buttons (edit provider, buffer size, About version), and removed the colour theme picker.",
     "isForceUpdate":  false
 }
