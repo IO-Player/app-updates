@@ -1,7 +1,7 @@
 {
-    "versionCode":  106,
-    "versionName":  "1.0.106-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v106/io-player-mobile.apk",
-    "updateNotes":  "Added a small diagnostic badge in the bottom-right corner of the player showing HTTP/error codes when playback fails, to help diagnose connection issues.",
+    "versionCode":  107,
+    "versionName":  "1.0.107-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v107/io-player-mobile.apk",
+    "updateNotes":  "Critical fix: resolves the persistent crash-on-launch that survived v105 (Room database schema error). If you\u0027re still hitting it, please update again — this makes the database self-heal instead of crashing.",
     "isForceUpdate":  false
 }
