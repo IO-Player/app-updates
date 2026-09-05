@@ -1,7 +1,7 @@
 {
-    "versionCode":  110,
-    "versionName":  "1.0.110-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v110/io-player-tv.apk",
-    "updateNotes":  "Fixed the player reconnecting constantly on many channels, with or without VPN - it was reacting to routine connection updates instead of genuine network changes.",
+    "versionCode":  149,
+    "versionName":  "1.0.149-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v149/nura-player-tv.apk",
+    "updateNotes":  "Nura Player rebrand: new name, icon, and Movies/Series dashboard with per-category rows. Fixed Series trending/hero being empty, fixed live TV audio playing in the background after switching sections, and added a per-profile Country setting.",
     "isForceUpdate":  false
 }
