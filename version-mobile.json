@@ -1,7 +1,7 @@
 {
-    "versionCode":  165,
-    "versionName":  "1.0.165-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v165/nura-player-mobile.apk",
-    "updateNotes":  "Movies/Series dashboard loads local content instantly instead of waiting on trending; series posters upgrade to higher-res artwork when available; fixed mobile Home layout and logo; fixed Live TV audio continuing in the background when switching to Movies/Series.",
+    "versionCode":  166,
+    "versionName":  "1.0.166-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v166/nura-player-mobile.apk",
+    "updateNotes":  "Fixed the Home screen layout: logo and TV/Movies/Series menu are now centered together as one block in the middle of the screen instead of sitting near the top.",
     "isForceUpdate":  false
 }
