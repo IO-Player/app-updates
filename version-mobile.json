@@ -1,7 +1,7 @@
 {
-    "versionCode":  149,
-    "versionName":  "1.0.149-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v149/nura-player-mobile.apk",
-    "updateNotes":  "Nura Player rebrand: new name, icon, and Movies/Series dashboard with per-category rows. Fixed Series trending/hero being empty, fixed live TV audio playing in the background after switching sections, and added a per-profile Country setting.",
+    "versionCode":  165,
+    "versionName":  "1.0.165-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v165/nura-player-mobile.apk",
+    "updateNotes":  "Movies/Series dashboard loads local content instantly instead of waiting on trending; series posters upgrade to higher-res artwork when available; fixed mobile Home layout and logo; fixed Live TV audio continuing in the background when switching to Movies/Series.",
     "isForceUpdate":  false
 }
