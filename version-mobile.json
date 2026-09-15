@@ -1,7 +1,7 @@
 {
-    "versionCode":  166,
-    "versionName":  "1.0.166-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v166/nura-player-mobile.apk",
-    "updateNotes":  "Fixed the Home screen layout: logo and TV/Movies/Series menu are now centered together as one block in the middle of the screen instead of sitting near the top.",
+    "versionCode":  169,
+    "versionName":  "1.0.169-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v169/nura-player-mobile.apk",
+    "updateNotes":  "Back button on Home now shows \"Press Back again to exit\" before actually closing the app, matching the same confirmation the TV Guide screen already had.",
     "isForceUpdate":  false
 }
