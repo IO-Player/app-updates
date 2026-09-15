@@ -1,7 +1,7 @@
 {
-    "versionCode":  173,
-    "versionName":  "1.0.173-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v173/nura-player-mobile.apk",
-    "updateNotes":  "Login now has the same abstract glow background as Home (was a single plain color wash before); the Nura Player wordmark on Home now uses a rounded, sharper font.",
+    "versionCode":  174,
+    "versionName":  "1.0.174-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v174/nura-player-mobile.apk",
+    "updateNotes":  "Series autoplay-next-episode now actually starts when the countdown reaches 0 (around when credits begin), instead of waiting for the stream's own end signal, which some sources never sent cleanly.",
     "isForceUpdate":  false
 }
