@@ -1,7 +1,7 @@
 {
-    "versionCode":  170,
-    "versionName":  "1.0.170-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v170/nura-player-mobile.apk",
-    "updateNotes":  "Home screen background is now a soft abstract ambient glow (matching the app's own logo/login look) instead of flat black.",
+    "versionCode":  171,
+    "versionName":  "1.0.171-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v171/nura-player-mobile.apk",
+    "updateNotes":  "Sharper, higher-resolution app logo/icon — smoother gradient glow, less banding.",
     "isForceUpdate":  false
 }
