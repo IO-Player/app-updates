@@ -1,7 +1,7 @@
 {
-    "versionCode":  171,
-    "versionName":  "1.0.171-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v171/nura-player-mobile.apk",
-    "updateNotes":  "Sharper, higher-resolution app logo/icon — smoother gradient glow, less banding.",
+    "versionCode":  172,
+    "versionName":  "1.0.172-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v172/nura-player-mobile.apk",
+    "updateNotes":  "Home screen now shows the \"Nura Player\" name instead of the icon mark, once the app has loaded.",
     "isForceUpdate":  false
 }
