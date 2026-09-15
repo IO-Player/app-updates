@@ -1,7 +1,7 @@
 {
-    "versionCode":  169,
-    "versionName":  "1.0.169-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v169/nura-player-mobile.apk",
-    "updateNotes":  "Back button on Home now shows \"Press Back again to exit\" before actually closing the app, matching the same confirmation the TV Guide screen already had.",
+    "versionCode":  170,
+    "versionName":  "1.0.170-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v170/nura-player-mobile.apk",
+    "updateNotes":  "Home screen background is now a soft abstract ambient glow (matching the app's own logo/login look) instead of flat black.",
     "isForceUpdate":  false
 }
