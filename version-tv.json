@@ -1,7 +1,7 @@
 {
-    "versionCode":  171,
-    "versionName":  "1.0.171-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v171/nura-player-tv.apk",
-    "updateNotes":  "Sharper, higher-resolution app logo/icon — smoother gradient glow, less banding.",
+    "versionCode":  165,
+    "versionName":  "1.0.165-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v165/nura-player-tv.apk",
+    "updateNotes":  "Movies/Series dashboard loads local content instantly instead of waiting on trending; series posters upgrade to higher-res artwork when available; fixed Guide navigation (Groups panel, Catch Up now long-press); fixed Back from full-screen Live returning to the wrong screen; fixed Live TV audio continuing in the background when switching to Movies/Series.",
     "isForceUpdate":  false
 }
