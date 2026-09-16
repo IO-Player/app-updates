@@ -1,7 +1,7 @@
 {
-    "versionCode":  174,
-    "versionName":  "1.0.174-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v174/nura-player-tv.apk",
-    "updateNotes":  "Series autoplay-next-episode now actually starts when the countdown reaches 0 (around when credits begin), instead of waiting for the stream's own end signal, which some sources never sent cleanly.",
+    "versionCode":  175,
+    "versionName":  "1.0.175-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v175/nura-player-tv.apk",
+    "updateNotes":  "Edit-provider dialog (Settings > Playlists) now stays open with your unsaved edits if you switch apps to copy a URL/username/password. Added DTS decoding to the software audio fallback, alongside the existing AC3/Dolby Digital Plus support, for boxes whose hardware DTS decoder fails on some channels.",
     "isForceUpdate":  false
 }
