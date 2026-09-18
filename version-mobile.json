@@ -1,7 +1,7 @@
 {
-    "versionCode":  176,
-    "versionName":  "1.0.176-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v176/nura-player-mobile.apk",
-    "updateNotes":  "Fixed a bug where the guide/channel list could show most categories as empty (or with far fewer channels than they actually have) even after a successful sync, caused by some providers formatting category IDs inconsistently. If your guide still looks off after updating, run Settings > Playlists > Update All once.",
+    "versionCode":  177,
+    "versionName":  "1.0.177-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v177/nura-player-mobile.apk",
+    "updateNotes":  "Fixed the guide/channel list showing most categories as empty or with only 1 channel: the 'Auto-hide duplicates' playlist tool could hide every channel in a category. That tool is now removed and everything it hid is automatically restored on update.",
     "isForceUpdate":  false
 }

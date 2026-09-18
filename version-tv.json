@@ -1,7 +1,7 @@
 {
-    "versionCode":  176,
-    "versionName":  "1.0.176-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v176/nura-player-tv.apk",
-    "updateNotes":  "Fixed a bug where the TV Guide could show most categories as empty (or with far fewer channels than they actually have) even after a successful sync, caused by some providers formatting category IDs inconsistently. If your guide still looks off after updating, run Settings > Playlists > Update All once.",
+    "versionCode":  177,
+    "versionName":  "1.0.177-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v177/nura-player-tv.apk",
+    "updateNotes":  "Fixed the TV Guide showing most categories as empty or with only 1 channel: the 'Auto-hide duplicates' playlist tool could hide every channel in a category. Removed that tool and restored everything it hid. Also fixed an audio/video sync drift on some TV boxes caused by preferring software audio decoding over your box's hardware decoder even when hardware worked fine.",
     "isForceUpdate":  false
 }
