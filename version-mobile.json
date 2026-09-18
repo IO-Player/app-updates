@@ -1,7 +1,7 @@
 {
-    "versionCode":  175,
-    "versionName":  "1.0.175-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v175/nura-player-mobile.apk",
-    "updateNotes":  "Edit-provider dialog now stays open (with your unsaved edits) if you switch apps to copy a URL/username/password. Login sync screen is now a proper dialog card. Added DTS decoding to the software audio fallback for boxes whose hardware DTS decoder fails on some channels.",
+    "versionCode":  176,
+    "versionName":  "1.0.176-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v176/nura-player-mobile.apk",
+    "updateNotes":  "Fixed a bug where the guide/channel list could show most categories as empty (or with far fewer channels than they actually have) even after a successful sync, caused by some providers formatting category IDs inconsistently. If your guide still looks off after updating, run Settings > Playlists > Update All once.",
     "isForceUpdate":  false
 }
