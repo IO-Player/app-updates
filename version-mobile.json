@@ -1,7 +1,7 @@
 {
-    "versionCode":  177,
-    "versionName":  "1.0.177-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v177/nura-player-mobile.apk",
-    "updateNotes":  "Fixed the guide/channel list showing most categories as empty or with only 1 channel: the 'Auto-hide duplicates' playlist tool could hide every channel in a category. That tool is now removed and everything it hid is automatically restored on update.",
+    "versionCode":  178,
+    "versionName":  "1.0.178-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v178/nura-player-mobile.apk",
+    "updateNotes":  "Fixed a crash on the Home screen's Trending/New For You rows that could happen when the recommendation engine matched the same title twice.",
     "isForceUpdate":  false
 }
