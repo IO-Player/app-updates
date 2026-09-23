@@ -1,7 +1,7 @@
 {
-    "versionCode":  199,
-    "versionName":  "1.0.199-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v199/io-player-mobile.apk",
-    "updateNotes":  "Fixes streams/catch-up failing to play (404) for paired devices - the app was building an invalid URL when a device's stored password was blank.",
+    "versionCode":  201,
+    "versionName":  "1.0.201-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v201/io-player-mobile.apk",
+    "updateNotes":  "Fixes channels going to 401 after zapping/switching away from the first channel, and fixes the EPG guide timing out on large channel lists.",
     "isForceUpdate":  false
 }
