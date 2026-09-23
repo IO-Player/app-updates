@@ -1,7 +1,7 @@
 {
-    "versionCode":  195,
-    "versionName":  "1.0.195-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v195/io-player-mobile.apk",
-    "updateNotes":  "Fixes channel playback and EPG sync failing with 401/404 errors, and fixes the login screen crashing after a backup/restore.",
+    "versionCode":  199,
+    "versionName":  "1.0.199-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v199/io-player-mobile.apk",
+    "updateNotes":  "Fixes streams/catch-up failing to play (404) for paired devices - the app was building an invalid URL when a device's stored password was blank.",
     "isForceUpdate":  false
 }
