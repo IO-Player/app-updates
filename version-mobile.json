@@ -1,7 +1,7 @@
 {
-    "versionCode":  185,
-    "versionName":  "1.0.185-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v185/io-player-mobile.apk",
-    "updateNotes":  "Added device pairing: link Nura Player to your account via a short code from the Xtream login screen\u0027s new \u0027Pair with Code\u0027 tab, instead of typing your username/password.",
+    "versionCode":  190,
+    "versionName":  "1.0.190-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v190/io-player-mobile.apk",
+    "updateNotes":  "Fixed a bug where the dead-channel scan could run with a missing profile, incorrectly flagging every channel as dead and offering to hide them all.",
     "isForceUpdate":  false
 }
