@@ -1,7 +1,7 @@
 {
-    "versionCode":  191,
-    "versionName":  "1.0.191-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v191/io-player-tv.apk",
-    "updateNotes":  "Fixed the update system itself (previous build had a broken version number that caused an infinite update loop). Also includes a fix for the dead-channel scan incorrectly flagging channels as dead.",
+    "versionCode":  195,
+    "versionName":  "1.0.195-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v195/io-player-tv.apk",
+    "updateNotes":  "Fixes channel playback and EPG sync failing with 401/404 errors, and fixes the login screen crashing after a backup/restore.",
     "isForceUpdate":  false
 }
