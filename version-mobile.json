@@ -1,7 +1,7 @@
 {
-    "versionCode":  190,
-    "versionName":  "1.0.190-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v190/io-player-mobile.apk",
-    "updateNotes":  "Fixed a bug where the dead-channel scan could run with a missing profile, incorrectly flagging every channel as dead and offering to hide them all.",
+    "versionCode":  191,
+    "versionName":  "1.0.191-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v191/io-player-mobile.apk",
+    "updateNotes":  "Fixed the update system itself (previous build had a broken version number that caused an infinite update loop). Also includes a fix for the dead-channel scan incorrectly flagging channels as dead.",
     "isForceUpdate":  false
 }
