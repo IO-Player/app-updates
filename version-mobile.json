@@ -1,7 +1,7 @@
 {
-    "versionCode":  201,
-    "versionName":  "1.0.201-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v201/io-player-mobile.apk",
-    "updateNotes":  "Fixes channels going to 401 after zapping/switching away from the first channel, and fixes the EPG guide timing out on large channel lists.",
+    "versionCode":  206,
+    "versionName":  "1.0.206-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v206/io-player-mobile.apk",
+    "updateNotes":  "Fixes an app freeze/crash on large channel lists, makes syncing manual-only instead of automatic in the background, and speeds up switching between groups.",
     "isForceUpdate":  false
 }
