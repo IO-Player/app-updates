@@ -1,7 +1,7 @@
 {
-    "versionCode": 213,
-    "versionName": "1.0.213-mobile",
-    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v213/io-player-mobile.apk",
-    "updateNotes": "Catch-up now plays the right programme (it uses the provider's own timezone), movie and series titles show on two lines, and left/right changes channel more reliably.",
-    "isForceUpdate": false
+    "versionCode":  215,
+    "versionName":  "1.0.215-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v215/io-player-mobile.apk",
+    "updateNotes":  "Faster app start, sharper posters in Movies, remaining time shown when a movie or episode starts, and catch-up in the provider\u0027s timezone.",
+    "isForceUpdate":  false
 }

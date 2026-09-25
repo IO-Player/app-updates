@@ -1,7 +1,7 @@
 {
-    "versionCode": 213,
-    "versionName": "1.0.213-tv",
-    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v213/io-player-tv.apk",
-    "updateNotes": "Faster startup and Movies/Series, a profile menu (top-right avatar), remaining-time badge for movies and series, a lighter guide look, and catch-up that plays the right programme.",
-    "isForceUpdate": false
+    "versionCode":  215,
+    "versionName":  "1.0.215-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v215/io-player-tv.apk",
+    "updateNotes":  "A new TV guide layout with three 30-minute columns, faster startup and Movies/Series, sharper posters, profile rename and delete, remaining time in the player, and catch-up in the provider\u0027s timezone.",
+    "isForceUpdate":  false
 }
