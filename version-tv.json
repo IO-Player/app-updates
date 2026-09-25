@@ -1,7 +1,7 @@
 {
-    "versionCode":  206,
-    "versionName":  "1.0.206-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v206/io-player-tv.apk",
-    "updateNotes":  "Fixes an app freeze/crash on large channel lists, makes syncing manual-only instead of automatic in the background, and speeds up switching between groups.",
-    "isForceUpdate":  false
+    "versionCode": 210,
+    "versionName": "1.0.210-tv",
+    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v210/io-player-tv.apk",
+    "updateNotes": "TV fixes: smoother D-pad navigation, better category matching, faster startup, and lineup updates after a sync.",
+    "isForceUpdate": false
 }
