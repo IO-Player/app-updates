@@ -1,7 +1,7 @@
 {
-    "versionCode": 210,
-    "versionName": "1.0.210-mobile",
-    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v210/io-player-mobile.apk",
-    "updateNotes": "New mobile player: big logo tiles, full channel names, a now-playing progress bar on every channel, channel search, a schedule and catch-up sheet, and a retry button when a channel fails.",
+    "versionCode": 213,
+    "versionName": "1.0.213-mobile",
+    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v213/io-player-mobile.apk",
+    "updateNotes": "Catch-up now plays the right programme (it uses the provider's own timezone), movie and series titles show on two lines, and left/right changes channel more reliably.",
     "isForceUpdate": false
 }

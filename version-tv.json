@@ -1,7 +1,7 @@
 {
-    "versionCode": 210,
-    "versionName": "1.0.210-tv",
-    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v210/io-player-tv.apk",
-    "updateNotes": "TV fixes: smoother D-pad navigation, better category matching, faster startup, and lineup updates after a sync.",
+    "versionCode": 213,
+    "versionName": "1.0.213-tv",
+    "updateUrl": "https://github.com/IO-Player/app-updates/releases/download/v213/io-player-tv.apk",
+    "updateNotes": "Faster startup and Movies/Series, a profile menu (top-right avatar), remaining-time badge for movies and series, a lighter guide look, and catch-up that plays the right programme.",
     "isForceUpdate": false
 }
