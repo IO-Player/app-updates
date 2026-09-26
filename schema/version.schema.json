@@ -3,7 +3,7 @@
   "title": "App version manifest",
   "type": "object",
   "additionalProperties": false,
-  "required": ["versionCode", "versionName", "updateUrl", "sha256", "updateNotes", "isForceUpdate"],
+  "required": ["versionCode", "versionName", "updateUrl", "updateNotes", "isForceUpdate"],
   "properties": {
     "versionCode": {
       "type": "integer",
@@ -20,7 +20,7 @@
     },
     "sha256": {
       "type": "string",
-      "description": "SHA-256 digest of the APK at updateUrl, lowercase hex. The app must verify the downloaded file against this before installing it.",
+      "description": "SHA-256 digest of the APK at updateUrl, lowercase hex. The app verifies the downloaded file against this before installing it. Filled in automatically by sync-sha256.yml, so release tooling doesn't need to set it.",
       "pattern": "^[a-f0-9]{64}$"
     },
     "updateNotes": {

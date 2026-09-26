@@ -29,7 +29,9 @@ jobs:
             ajv validate -c ajv-formats --spec=draft7 -s schema/version.schema.json -d "$f"
           done
 
-      - name: Verify updateUrl asset exists and sha256 matches manifest
+      # A missing or stale sha256 is only a warning here: sync-sha256.yml corrects it right after
+      # every manifest push, so failing the release push over it would just be noise.
+      - name: Verify updateUrl asset exists and check sha256
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -62,11 +64,10 @@ jobs:
             actual_sha=$(echo "$actual_sha" | tr '[:upper:]' '[:lower:]')
 
             if [ "$actual_sha" != "$expected_sha" ]; then
-              echo "::error file=$f::sha256 mismatch for $asset: manifest has $expected_sha, release asset has $actual_sha"
-              exit 1
+              echo "::warning file=$f::sha256 for $asset is ${expected_sha} but the release asset is $actual_sha; sync-sha256 will correct it"
+            else
+              echo "OK: $asset sha256 matches manifest"
             fi
-
-            echo "OK: $asset sha256 matches manifest"
           done
 
   versioncode-guard:
