@@ -1,0 +1,39 @@
+name: Validate version manifests
+
+on:
+  push:
+    paths:
+      - "version-*.json"
+      - "schema/version.schema.json"
+  pull_request:
+    paths:
+      - "version-*.json"
+      - "schema/version.schema.json"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install ajv-cli
+        run: npm install -g ajv-cli ajv-formats
+
+      - name: Validate JSON against schema
+        run: |
+          for f in version-tv.json version-mobile.json; do
+            echo "Validating $f"
+            ajv validate -c ajv-formats --spec=draft7 -s schema/version.schema.json -d "$f"
+          done
+
+      - name: Check updateUrl is reachable
+        run: |
+          for f in version-tv.json version-mobile.json; do
+            url=$(jq -r '.updateUrl' "$f")
+            echo "Checking $url"
+            status=$(curl -s -o /dev/null -w "%{http_code}" -L "$url")
+            if [ "$status" != "200" ]; then
+              echo "::error file=$f::updateUrl returned HTTP $status (expected 200): $url"
+              exit 1
+            fi
+          done
