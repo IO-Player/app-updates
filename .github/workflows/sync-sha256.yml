@@ -1,0 +1,57 @@
+name: Sync manifest sha256
+
+# Release tooling rewrites version-*.json without knowing about the sha256 field. A missing value
+# means the app installs updates without checking them; a stale one (carried over from the previous
+# release) makes checksum-verifying app builds reject every update. This keeps the field equal to
+# the digest GitHub computed for the release asset each manifest's updateUrl points at.
+on:
+  push:
+    branches: [main]
+    paths:
+      - "version-*.json"
+  release:
+    types: [published]
+  schedule:
+    # Hourly safety net for releases whose assets finished uploading after the manifest push.
+    - cron: "23 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sync-sha256
+  cancel-in-progress: false
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - name: Update sha256 fields and push
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          # Redo the whole update on a fresh main each attempt, so a concurrent release push
+          # never leaves us rebasing a stale edit.
+          for attempt in 1 2 3; do
+            git fetch -q origin main
+            git reset -q --hard origin/main
+            python3 .github/scripts/sync_sha256.py
+            if git diff --quiet; then
+              echo "Manifests already match their release assets."
+              exit 0
+            fi
+            git commit -qam "Update sha256 to match the released APKs"
+            if git push -q origin HEAD:main; then
+              exit 0
+            fi
+            echo "Push raced another commit, retrying ($attempt/3)"
+            sleep 15
+          done
+          exit 1
