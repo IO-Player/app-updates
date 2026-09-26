@@ -20,13 +20,30 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Install ajv-cli
-        run: npm install -g ajv-cli ajv-formats
+        run: npm install -g ajv-cli@5.0.0 ajv-formats@3.0.1
 
       - name: Validate JSON against schema
         run: |
           for f in version-tv.json version-mobile.json; do
             echo "Validating $f"
             ajv validate -c ajv-formats --spec=draft7 -s schema/version.schema.json -d "$f"
+          done
+
+      - name: Check versionCode, versionName and updateUrl agree
+        run: |
+          for f in version-tv.json version-mobile.json; do
+            flavor=${f#version-}; flavor=${flavor%.json}
+            code=$(jq -r '.versionCode' "$f")
+            name=$(jq -r '.versionName' "$f")
+            url=$(jq -r '.updateUrl' "$f")
+            if [[ "$name" != *".$code-$flavor" ]]; then
+              echo "::error file=$f::versionName $name doesn't end in .$code-$flavor"
+              exit 1
+            fi
+            if [[ "$url" != */releases/download/v$code/io-player-$flavor.apk ]]; then
+              echo "::error file=$f::updateUrl $url isn't the v$code io-player-$flavor.apk release asset"
+              exit 1
+            fi
           done
 
       # A missing or stale sha256 is only a warning here: sync-sha256.yml corrects it right after
@@ -48,12 +65,23 @@ jobs:
 
             echo "Checking $owner/$repo release $tag asset $asset"
 
-            release_json=$(curl -sS \
-              -H "Authorization: Bearer ${GH_TOKEN}" \
-              -H "Accept: application/vnd.github+json" \
-              "https://api.github.com/repos/$owner/$repo/releases/tags/$tag")
-
-            digest=$(echo "$release_json" | jq -r --arg name "$asset" '.assets[] | select(.name == $name) | .digest')
+            # Release tooling can push the manifest before the APK finishes uploading, so wait for
+            # it (same budget as sync_sha256.py) rather than failing a release that is fine.
+            digest=""
+            for attempt in $(seq 1 10); do
+              release_json=$(curl -sS \
+                -H "Authorization: Bearer ${GH_TOKEN}" \
+                -H "Accept: application/vnd.github+json" \
+                "https://api.github.com/repos/$owner/$repo/releases/tags/$tag")
+              digest=$(echo "$release_json" | jq -r --arg name "$asset" '.assets[]? | select(.name == $name and .state == "uploaded") | .digest')
+              if [ -n "$digest" ] && [ "$digest" != "null" ]; then
+                break
+              fi
+              if [ "$attempt" -lt 10 ]; then
+                echo "$tag/$asset isn't uploaded yet, checking again in 30s"
+                sleep 30
+              fi
+            done
 
             if [ -z "$digest" ] || [ "$digest" = "null" ]; then
               echo "::error file=$f::Could not find release asset $asset in $owner/$repo release $tag"

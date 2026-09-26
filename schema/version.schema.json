@@ -3,7 +3,7 @@
   "title": "App version manifest",
   "type": "object",
   "additionalProperties": false,
-  "required": ["versionCode", "versionName", "updateUrl", "updateNotes", "isForceUpdate"],
+  "required": ["versionCode", "versionName", "updateUrl", "sha256", "updateNotes", "isForceUpdate"],
   "properties": {
     "versionCode": {
       "type": "integer",
@@ -20,12 +20,13 @@
     },
     "sha256": {
       "type": "string",
-      "description": "SHA-256 digest of the APK at updateUrl, lowercase hex. The app verifies the downloaded file against this before installing it. Filled in automatically by sync-sha256.yml, so release tooling doesn't need to set it.",
+      "description": "SHA-256 digest of the APK at updateUrl, lowercase hex. The app refuses to install an update whose manifest has no sha256 or whose download doesn't match it. publish-update.ps1 writes it, and sync-sha256.yml corrects it if it goes stale.",
       "pattern": "^[a-f0-9]{64}$"
     },
     "updateNotes": {
       "type": "string",
-      "minLength": 1
+      "minLength": 1,
+      "maxLength": 500
     },
     "isForceUpdate": {
       "type": "boolean"
