@@ -2,6 +2,7 @@
     "versionCode":  215,
     "versionName":  "1.0.215-tv",
     "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v215/io-player-tv.apk",
+    "sha256":  "fc4c2616a0c7197aee8e32d18fa2783100af5b993b88d872e6049eefe1c4193f",
     "updateNotes":  "A new TV guide layout with three 30-minute columns, faster startup and Movies/Series, sharper posters, profile rename and delete, remaining time in the player, and catch-up in the provider\u0027s timezone.",
     "isForceUpdate":  false
 }

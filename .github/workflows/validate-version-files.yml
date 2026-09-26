@@ -10,6 +10,9 @@ on:
       - "version-*.json"
       - "schema/version.schema.json"
 
+permissions:
+  contents: read
+
 jobs:
   validate:
     runs-on: ubuntu-latest
@@ -26,14 +29,80 @@ jobs:
             ajv validate -c ajv-formats --spec=draft7 -s schema/version.schema.json -d "$f"
           done
 
-      - name: Check updateUrl is reachable
+      - name: Verify updateUrl asset exists and sha256 matches manifest
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           for f in version-tv.json version-mobile.json; do
             url=$(jq -r '.updateUrl' "$f")
-            echo "Checking $url"
-            status=$(curl -s -o /dev/null -w "%{http_code}" -L "$url")
-            if [ "$status" != "200" ]; then
-              echo "::error file=$f::updateUrl returned HTTP $status (expected 200): $url"
+            expected_sha=$(jq -r '.sha256' "$f")
+
+            # updateUrl looks like https://github.com/<owner>/<repo>/releases/download/<tag>/<asset>
+            path=${url#https://github.com/}
+            owner=$(echo "$path" | cut -d/ -f1)
+            repo=$(echo "$path" | cut -d/ -f2)
+            tag=$(echo "$path" | cut -d/ -f5)
+            asset=$(echo "$path" | cut -d/ -f6)
+
+            echo "Checking $owner/$repo release $tag asset $asset"
+
+            release_json=$(curl -sS \
+              -H "Authorization: Bearer ${GH_TOKEN}" \
+              -H "Accept: application/vnd.github+json" \
+              "https://api.github.com/repos/$owner/$repo/releases/tags/$tag")
+
+            digest=$(echo "$release_json" | jq -r --arg name "$asset" '.assets[] | select(.name == $name) | .digest')
+
+            if [ -z "$digest" ] || [ "$digest" = "null" ]; then
+              echo "::error file=$f::Could not find release asset $asset in $owner/$repo release $tag"
+              exit 1
+            fi
+
+            actual_sha=${digest#sha256:}
+            actual_sha=$(echo "$actual_sha" | tr '[:upper:]' '[:lower:]')
+
+            if [ "$actual_sha" != "$expected_sha" ]; then
+              echo "::error file=$f::sha256 mismatch for $asset: manifest has $expected_sha, release asset has $actual_sha"
+              exit 1
+            fi
+
+            echo "OK: $asset sha256 matches manifest"
+          done
+
+  versioncode-guard:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Reject versionCode decreases
+        run: |
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            base_ref="${{ github.event.pull_request.base.sha }}"
+          else
+            base_ref="${{ github.event.before }}"
+          fi
+
+          if [ -z "$base_ref" ] || [ "$base_ref" = "0000000000000000000000000000000000000000" ]; then
+            echo "No previous ref to compare against, skipping."
+            exit 0
+          fi
+
+          for f in version-tv.json version-mobile.json; do
+            old_json=$(git show "$base_ref:$f" 2>/dev/null || true)
+            if [ -z "$old_json" ]; then
+              echo "$f did not exist at $base_ref, skipping."
+              continue
+            fi
+
+            old_code=$(echo "$old_json" | jq '.versionCode')
+            new_code=$(jq '.versionCode' "$f")
+
+            echo "$f: $old_code -> $new_code"
+
+            if [ "$new_code" -lt "$old_code" ]; then
+              echo "::error file=$f::versionCode decreased from $old_code to $new_code (rollback attacks are not allowed)"
               exit 1
             fi
           done

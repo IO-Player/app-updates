@@ -3,7 +3,7 @@
   "title": "App version manifest",
   "type": "object",
   "additionalProperties": false,
-  "required": ["versionCode", "versionName", "updateUrl", "updateNotes", "isForceUpdate"],
+  "required": ["versionCode", "versionName", "updateUrl", "sha256", "updateNotes", "isForceUpdate"],
   "properties": {
     "versionCode": {
       "type": "integer",
@@ -17,6 +17,11 @@
       "type": "string",
       "format": "uri",
       "pattern": "^https://github\\.com/IO-Player/app-updates/releases/download/.+\\.apk$"
+    },
+    "sha256": {
+      "type": "string",
+      "description": "SHA-256 digest of the APK at updateUrl, lowercase hex. The app must verify the downloaded file against this before installing it.",
+      "pattern": "^[a-f0-9]{64}$"
     },
     "updateNotes": {
       "type": "string",
