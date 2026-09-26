@@ -2,6 +2,7 @@
     "versionCode":  215,
     "versionName":  "1.0.215-mobile",
     "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v215/io-player-mobile.apk",
+    "sha256":  "abdb8eb25e4907298f2b12267228bd1c5c0582c60eb2875fa317837df7c24890",
     "updateNotes":  "Faster app start, sharper posters in Movies, remaining time shown when a movie or episode starts, and catch-up in the provider\u0027s timezone.",
     "isForceUpdate":  false
 }
