@@ -1,8 +1,8 @@
 {
-    "versionCode":  215,
-    "versionName":  "1.0.215-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v215/io-player-mobile.apk",
-    "sha256":  "abdb8eb25e4907298f2b12267228bd1c5c0582c60eb2875fa317837df7c24890",
-    "updateNotes":  "Faster app start, sharper posters in Movies, remaining time shown when a movie or episode starts, and catch-up in the provider\u0027s timezone.",
+    "versionCode":  268,
+    "versionName":  "1.0.268-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v268/io-player-mobile.apk",
+    "sha256":  "da0ab241422365ea369d6f7020772b36d7960966a34c89419c932786c772c180",
+    "updateNotes":  "M3U playlists, sleep timer, channel list on Up, voice search, subtitle downloads, Android TV home rows, better audio support (MP2, TrueHD), faster startup and security fixes.",
     "isForceUpdate":  false
 }

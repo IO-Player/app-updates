@@ -1,8 +1,8 @@
 {
-    "versionCode":  215,
-    "versionName":  "1.0.215-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v215/io-player-tv.apk",
-    "sha256":  "fc4c2616a0c7197aee8e32d18fa2783100af5b993b88d872e6049eefe1c4193f",
-    "updateNotes":  "A new TV guide layout with three 30-minute columns, faster startup and Movies/Series, sharper posters, profile rename and delete, remaining time in the player, and catch-up in the provider\u0027s timezone.",
+    "versionCode":  268,
+    "versionName":  "1.0.268-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v268/io-player-tv.apk",
+    "sha256":  "8c2c4e81c27c3f4fc777a9f80eb1b2a0ef86914092b897e7a53d48787835e3c2",
+    "updateNotes":  "M3U playlists, sleep timer, channel list on Up, voice search, subtitle downloads, Android TV home rows, better audio support (MP2, TrueHD), faster startup and security fixes.",
     "isForceUpdate":  false
 }
