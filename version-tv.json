@@ -1,8 +1,8 @@
 {
-    "versionCode":  268,
-    "versionName":  "1.0.268-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v268/io-player-tv.apk",
-    "sha256":  "8c2c4e81c27c3f4fc777a9f80eb1b2a0ef86914092b897e7a53d48787835e3c2",
-    "updateNotes":  "M3U playlists, sleep timer, channel list on Up, voice search, subtitle downloads, Android TV home rows, better audio support (MP2, TrueHD), faster startup and security fixes.",
+    "versionCode":  284,
+    "versionName":  "1.0.284-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v284/io-player-tv.apk",
+    "sha256":  "0dd067eb690145b97ba96cc670f5cd36ef6fee192055e17a31c6143c4f18c6fa",
+    "updateNotes":  "Free / trial / Lifetime licensing, background auto-updates, movie \u0026 series info powered by TMDB, upgraded Sports Hub (kick-off times, where to watch, reminders, favourite teams), encrypted private backups, and TV guide time-jump navigation.",
     "isForceUpdate":  false
 }
