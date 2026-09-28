@@ -1,8 +1,8 @@
 {
-    "versionCode":  286,
-    "versionName":  "1.0.286-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v286/io-player-tv.apk",
-    "sha256":  "667d60f587f2bbcfaec2197a49ef78a8fcde53b348dd1d52ab031f19b063a1b6",
+    "versionCode":  289,
+    "versionName":  "1.0.289-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v289/io-player-tv.apk",
+    "sha256":  "af3ae581018173decaf72b31025ae44ff6130128f0bebfbf68e61e5eec74a1af",
     "updateNotes":  "App updates",
     "isForceUpdate":  false
 }

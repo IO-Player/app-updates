@@ -1,8 +1,8 @@
 {
-    "versionCode":  286,
-    "versionName":  "1.0.286-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v286/io-player-mobile.apk",
-    "sha256":  "66a90486921a4ea6b4a3e9c12c166df14296d303c9f0ec8d62de92484f3a1400",
+    "versionCode":  289,
+    "versionName":  "1.0.289-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v289/io-player-mobile.apk",
+    "sha256":  "b0c23db0ee5bbc8cfab3a7650ee7f4191f2333bace3d1eb1c78ccd35a2485a3a",
     "updateNotes":  "App updates",
     "isForceUpdate":  false
 }
