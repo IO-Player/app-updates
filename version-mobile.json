@@ -1,8 +1,8 @@
 {
-    "versionCode":  284,
-    "versionName":  "1.0.284-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v284/io-player-mobile.apk",
-    "sha256":  "68ff48856c878062ca7e5538b655ee704e23b5f0e649dfcfac80a7edc8d11704",
-    "updateNotes":  "Free / trial / Lifetime licensing, background auto-updates, movie \u0026 series info powered by TMDB, upgraded Sports Hub (kick-off times, where to watch, reminders, favourite teams), encrypted private backups, and TV guide time-jump navigation.",
+    "versionCode":  286,
+    "versionName":  "1.0.286-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v286/io-player-mobile.apk",
+    "sha256":  "66a90486921a4ea6b4a3e9c12c166df14296d303c9f0ec8d62de92484f3a1400",
+    "updateNotes":  "App updates",
     "isForceUpdate":  false
 }
