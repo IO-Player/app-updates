@@ -1,8 +1,8 @@
 {
-    "versionCode":  293,
-    "versionName":  "1.0.293-tv",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v293/io-player-tv.apk",
-    "sha256":  "d0af2dbfc56e3efb574a36fc5b3a2455bcd5a346258bdca7374520f04b75680a",
-    "updateNotes":  "Fixed a player freeze on channel change (Center button), and fixed the last-channel-on-start setting not working on TV.",
+    "versionCode":  294,
+    "versionName":  "1.0.294-tv",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v294/io-player-tv.apk",
+    "sha256":  "236aab536d230b4490bae8b748090ad2bb8462fde365102b486d77056986b251",
+    "updateNotes":  "Reverted mobile Home screen to the simple centered menu (Live/Movies/Series/Settings).",
     "isForceUpdate":  false
 }
