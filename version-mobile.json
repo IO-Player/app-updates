@@ -1,8 +1,8 @@
 {
-    "versionCode":  289,
-    "versionName":  "1.0.289-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v289/io-player-mobile.apk",
-    "sha256":  "b0c23db0ee5bbc8cfab3a7650ee7f4191f2333bace3d1eb1c78ccd35a2485a3a",
-    "updateNotes":  "App updates",
+    "versionCode":  293,
+    "versionName":  "1.0.293-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v293/io-player-mobile.apk",
+    "sha256":  "70bf3a069f2721c45955b87e1222854681a449fc5978952d67a3914c2ff77a45",
+    "updateNotes":  "Fixed a player freeze on channel change (Center button), and fixed the last-channel-on-start setting not working on TV.",
     "isForceUpdate":  false
 }
