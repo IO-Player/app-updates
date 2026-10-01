@@ -1,8 +1,8 @@
 {
-    "versionCode":  294,
-    "versionName":  "1.0.294-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v294/io-player-mobile.apk",
-    "sha256":  "752d6dc4ac4f9a23ea43b67b5f67dfa357fab09fd816fd2c4f5b20856e2bf1df",
-    "updateNotes":  "Reverted mobile Home screen to the simple centered menu (Live/Movies/Series/Settings).",
+    "versionCode":  311,
+    "versionName":  "1.0.311-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v311/io-player-mobile.apk",
+    "sha256":  "e018765a7ffacfde429d9f015afe17dfc877f2723d22fcc0542047129e48287d",
+    "updateNotes":  "Faster first install: live TV loads first, then the guide, movies and series download in the background. New Quick Groups on TV (Left from the Quick Guide). App is now called Nura.",
     "isForceUpdate":  false
 }
