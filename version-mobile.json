@@ -1,8 +1,8 @@
 {
-    "versionCode":  311,
-    "versionName":  "1.0.311-mobile",
-    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v311/io-player-mobile.apk",
-    "sha256":  "e018765a7ffacfde429d9f015afe17dfc877f2723d22fcc0542047129e48287d",
-    "updateNotes":  "Faster first install: live TV loads first, then the guide, movies and series download in the background. New Quick Groups on TV (Left from the Quick Guide). App is now called Nura.",
+    "versionCode":  344,
+    "versionName":  "1.0.344-mobile",
+    "updateUrl":  "https://github.com/IO-Player/app-updates/releases/download/v344/nura-player-mobile.apk",
+    "sha256":  "407caca813e517273f12a2bd80f4a42a2120a486311472f954e7749bf0dc87a1",
+    "updateNotes":  "Guide: thinner rows, lighter look, bigger text, clear quality tags and whole rows (nothing cut off). Movies and Series: the banner follows the poster you highlight. Player: visible highlight on the bottom icons. Settings: shows how many channels the guide covers. Sports Hub: Football. Side menu matches the screen colour. Renamed to Nura Player.",
     "isForceUpdate":  false
 }
